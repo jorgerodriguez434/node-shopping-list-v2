@@ -61,7 +61,7 @@ app.post('/recipes', jsonParser, (req, res) => {
           if (!(field in req.body)){
 
               const message = `Missing \'${field}\' in request body`;
-              consoxsle.log(message);
+              console.log(message);
               return res.status(400).send(message);
           }
     });

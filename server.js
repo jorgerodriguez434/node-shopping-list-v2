@@ -51,7 +51,7 @@ app.post('/shopping-list', jsonParser, (req, res) => {
 app.get('/recipes', (req, res) => {
   res.json(Recipes.get());
 
-})
+});
 
 app.post('/recipes', jsonParser, (req, res) => {
 
